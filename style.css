@@ -38,9 +38,11 @@
   background-image: url("images/Circle\ design.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .header-img-container img {
-  width: 100%;
+  width: 90%;
 }
 .hero-title-container {
   text-align: center;
@@ -60,6 +62,75 @@
   border: none;
   border-radius: 41px;
   margin: 20px 0px;
+}
+
+/* sponsor section style */
+.sponsor-container {
+  margin: 20px 0px;
+}
+.sponsor-container hr {
+  display: none;
+}
+.sponsor-img-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+}
+.sponsor-img-container div {
+  /* height: 150px; */
+  /* min-width: 150px; */
+}
+
+/* card section */
+.card-header-title {
+  text-align: center;
+}
+.card-header-title h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.card-section .card {
+  padding: 17px 14px;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.075);
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.card-section i {
+  color: gold;
+}
+.card p {
+  max-width: 300px;
+}
+.card h2,
+h3,
+i,
+p {
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 760px) {
@@ -99,10 +170,24 @@
     padding: 50px 0px;
   }
   .header-img-container {
+    background-size: cover;
     flex: 1;
   }
   .hero-title-container {
     text-align: left;
     flex: 1;
+  }
+  /* sponsor section style */
+  .card-header-title {
+    margin-top: 50px;
+  }
+  .card-header-title h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  /* card design */
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
