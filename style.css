@@ -128,9 +128,69 @@
 }
 .card h2,
 h3,
-i,
 p {
   margin-bottom: 15px;
+}
+
+.see-more {
+  margin-top: 25px;
+  text-align: right;
+}
+.see-more a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e02c6d;
+}
+.arro i {
+  color: #e02c6d;
+}
+/* Feathers */
+.featured-section-container {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.featured-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.featured-content p {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 28px;
+}
+/* Footer */
+footer {
+  margin-top: 50px;
+  background-color: #0a0826;
+}
+
+.footer-container {
+  text-align: center;
+  color: white;
+}
+.footer-container h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.footer-container p {
+  font-size: 0.75rem;
+}
+.footer-container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer-icon {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+.footer-icon i {
+  padding-left: 20px;
 }
 
 @media screen and (min-width: 760px) {
@@ -189,5 +249,19 @@ p {
   /* card design */
   .card-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Feathers */
+  .featured-section-container {
+    flex-direction: row;
+    gap: 100px;
+    text-align: left;
+    align-items: center;
+  }
+  .featured-section-container h2 {
+    font-size: 2.37rem;
+  }
+  .featured-section-container p {
+    max-width: 500px;
   }
 }
