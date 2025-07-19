@@ -11,3 +11,98 @@
   padding: 0;
 }
 /* Shared style */
+
+.mobile-margin {
+  margin: 0 16px;
+}
+
+/* Shared style End >>>>>>>>*/
+
+/* Header manu */
+.logo-manu-section {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-manu-section h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.manu {
+  display: none;
+}
+/* Hero section */
+.header-img-container {
+  background-image: url("images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-img-container img {
+  width: 100%;
+}
+.hero-title-container {
+  text-align: center;
+}
+.hero-title-container h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: auto;
+  margin: 10px 0px;
+}
+.btn {
+  background-color: #e02c6d;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 41px;
+  margin: 20px 0px;
+}
+
+@media screen and (min-width: 760px) {
+  /* shared style */
+  .main-margin {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /* Header manu */
+  .mobile-manu-bar {
+    display: none;
+  }
+
+  .manu-container {
+    display: flex;
+    gap: 10px;
+  }
+  .manu {
+    display: block;
+  }
+
+  .manu li {
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+  }
+  .manu a {
+    text-decoration: none;
+    color: gray;
+  }
+  /* Hero section */
+  .header-hero-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0px;
+  }
+  .header-img-container {
+    flex: 1;
+  }
+  .hero-title-container {
+    text-align: left;
+    flex: 1;
+  }
+}
